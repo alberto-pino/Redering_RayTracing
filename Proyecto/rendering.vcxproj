@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2193A54-6B38-42DB-BF8A-C2F65205E2C3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>path_tracer</RootNamespace>
+    <ProjectName>rendering</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)asdf\rendering\x64</OutDir>
+    <IntDir>$(ProjectDir)asdf\rendering\x64</IntDir>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>O:\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>O:\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;GOOGLE_GLOG_DLL_DECL=;GLOG_NO_ABBREVIATED_SEVERITIES;NOMINMAX;PATHTRACER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../rendering_lib/include/gmtl;./;../rendering_lib/include;./lights;./brdfs;../rendering_lib/include/glog</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../rendering_lib/lib/x64/Debug;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>rendering_lib.lib;libglog_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./bin/x64/Debug/rendering.dll</OutputFile>
+      <ImportLibrary>./deploy/x64/Debug/$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(ProjectDir)"deploy
+
+mkdir "$(ProjectDir)"deploy\x64
+
+mkdir "$(ProjectDir)"deploy\x64\Debug
+
+xcopy /y /s "$(ProjectDir)"bin\x64\Debug\$(ProjectName).dll "$(ProjectDir)"deploy\x64\Debug
+
+xcopy /y /s "$(ProjectDir)"bin\x64\Debug\$(ProjectName).dll .\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;GOOGLE_GLOG_DLL_DECL=;GLOG_NO_ABBREVIATED_SEVERITIES;NOMINMAX;PATHTRACER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../rendering_lib/include/gmtl;./;../rendering_lib/include;./lights;./brdfs;../rendering_lib/include/glog</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../rendering_lib/lib/x64/Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>rendering_lib.lib;libglog_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>./bin/x64/Release/rendering.dll</OutputFile>
+      <ImportLibrary>./deploy/x64/Release/$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(ProjectDir)"deploy
+
+mkdir "$(ProjectDir)"deploy\x64
+
+mkdir "$(ProjectDir)"deploy\x64\Release
+
+xcopy /y /s "$(ProjectDir)"bin\x64\Release\$(ProjectName).dll "$(ProjectDir)"deploy\x64\Release
+
+xcopy /y /s "$(ProjectDir)"bin\x64\Release\$(ProjectName).dll .\bin</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ass_parser.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="lights\area_light.cpp" />
+    <ClCompile Include="lights\point_light.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="maya\ma_writer.cpp" />
+    <ClCompile Include="reporter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gmtl\gmtl\AABox.h" />
+    <ClInclude Include="..\gmtl\gmtl\AABoxOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\AxisAngle.h" />
+    <ClInclude Include="..\gmtl\gmtl\AxisAngleOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Comparitors.h" />
+    <ClInclude Include="..\gmtl\gmtl\Config.h" />
+    <ClInclude Include="..\gmtl\gmtl\Containment.h" />
+    <ClInclude Include="..\gmtl\gmtl\Coord.h" />
+    <ClInclude Include="..\gmtl\gmtl\CoordOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Defines.h" />
+    <ClInclude Include="..\gmtl\gmtl\EulerAngle.h" />
+    <ClInclude Include="..\gmtl\gmtl\EulerAngleOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\External\OpenSGConvert.h" />
+    <ClInclude Include="..\gmtl\gmtl\Fit\GaussPointsFit.h" />
+    <ClInclude Include="..\gmtl\gmtl\Frustum.h" />
+    <ClInclude Include="..\gmtl\gmtl\FrustumOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Generate.h" />
+    <ClInclude Include="..\gmtl\gmtl\gmtl.h" />
+    <ClInclude Include="..\gmtl\gmtl\Helpers.h" />
+    <ClInclude Include="..\gmtl\gmtl\Intersection.h" />
+    <ClInclude Include="..\gmtl\gmtl\LineSeg.h" />
+    <ClInclude Include="..\gmtl\gmtl\LineSegOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Math.h" />
+    <ClInclude Include="..\gmtl\gmtl\Matrix.h" />
+    <ClInclude Include="..\gmtl\gmtl\MatrixOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Misc\MatrixConvert.h" />
+    <ClInclude Include="..\gmtl\gmtl\Numerics\Eigen.h" />
+    <ClInclude Include="..\gmtl\gmtl\OOBox.h" />
+    <ClInclude Include="..\gmtl\gmtl\Output.h" />
+    <ClInclude Include="..\gmtl\gmtl\ParametricCurve.h" />
+    <ClInclude Include="..\gmtl\gmtl\Plane.h" />
+    <ClInclude Include="..\gmtl\gmtl\PlaneOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Point.h" />
+    <ClInclude Include="..\gmtl\gmtl\Quat.h" />
+    <ClInclude Include="..\gmtl\gmtl\QuatOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Ray.h" />
+    <ClInclude Include="..\gmtl\gmtl\RayOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Sphere.h" />
+    <ClInclude Include="..\gmtl\gmtl\SphereOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Tri.h" />
+    <ClInclude Include="..\gmtl\gmtl\TriOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\Util\Assert.h" />
+    <ClInclude Include="..\gmtl\gmtl\Util\Meta.h" />
+    <ClInclude Include="..\gmtl\gmtl\Util\StaticAssert.h" />
+    <ClInclude Include="..\gmtl\gmtl\Vec.h" />
+    <ClInclude Include="..\gmtl\gmtl\VecBase.h" />
+    <ClInclude Include="..\gmtl\gmtl\VecExprMeta.h" />
+    <ClInclude Include="..\gmtl\gmtl\VecOps.h" />
+    <ClInclude Include="..\gmtl\gmtl\VecOpsMeta.h" />
+    <ClInclude Include="..\gmtl\gmtl\Version.h" />
+    <ClInclude Include="..\gmtl\gmtl\Xforms.h" />
+    <ClInclude Include="brdfs\blinn.h" />
+    <ClInclude Include="brdfs\blinnphong.h" />
+    <ClInclude Include="brdfs\lambert.h" />
+    <ClInclude Include="brdfs\standard.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="maya\ma_writer.h" />
+    <ClInclude Include="reporter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="maya\maya_helper.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,18 @@
+﻿  main.cpp
+c:\users\alberto.pino\documents\redering\proyecto\main.cpp(50): warning C4018: '<': signed/unsigned mismatch
+c:\users\alberto.pino\documents\redering\proyecto\main.cpp(52): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(O:\rendering\x64\Debug\rendering.dll) does not match the Linker's OutputFile property value (C:\Users\alberto.pino\Documents\Redering\Proyecto\bin\x64\Debug\rendering.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library ./deploy/x64/Debug/rendering.lib and object ./deploy/x64/Debug/rendering.exp
+libglog_static.lib(logging.obj) : warning LNK4099: PDB 'libglog_static.pdb' was not found with 'libglog_static.lib(logging.obj)' or at 'O:\rendering\x64\Debug\libglog_static.pdb'; linking object as if no debug info
+libglog_static.lib(raw_logging.obj) : warning LNK4099: PDB 'libglog_static.pdb' was not found with 'libglog_static.lib(raw_logging.obj)' or at 'O:\rendering\x64\Debug\libglog_static.pdb'; linking object as if no debug info
+libglog_static.lib(utilities.obj) : warning LNK4099: PDB 'libglog_static.pdb' was not found with 'libglog_static.lib(utilities.obj)' or at 'O:\rendering\x64\Debug\libglog_static.pdb'; linking object as if no debug info
+libglog_static.lib(vlog_is_on.obj) : warning LNK4099: PDB 'libglog_static.pdb' was not found with 'libglog_static.lib(vlog_is_on.obj)' or at 'O:\rendering\x64\Debug\libglog_static.pdb'; linking object as if no debug info
+libglog_static.lib(port.obj) : warning LNK4099: PDB 'libglog_static.pdb' was not found with 'libglog_static.lib(port.obj)' or at 'O:\rendering\x64\Debug\libglog_static.pdb'; linking object as if no debug info
+  rendering.vcxproj -> O:\rendering\x64\Debug\rendering.dll
+  A subdirectory or file C:\Users\alberto.pino\Documents\Redering\Proyecto\deploy already exists.
+  A subdirectory or file C:\Users\alberto.pino\Documents\Redering\Proyecto\deploy\x64 already exists.
+  A subdirectory or file C:\Users\alberto.pino\Documents\Redering\Proyecto\deploy\x64\Debug already exists.
+  C:\Users\alberto.pino\Documents\Redering\Proyecto\bin\x64\Debug\rendering.dll
+  1 File(s) copied
+  C:\Users\alberto.pino\Documents\Redering\Proyecto\bin\x64\Debug\rendering.dll
+  1 File(s) copied

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gmtl">
+      <UniqueIdentifier>{b0ab5666-ccf0-499e-a122-091e54c97461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmtl\Util">
+      <UniqueIdentifier>{08e970dc-7f30-43a2-bea7-41cf080b4867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmtl\Fit">
+      <UniqueIdentifier>{7a3c253b-d68f-416e-8dda-bdc9fe4179b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmtl\Misc">
+      <UniqueIdentifier>{915099d2-818d-4f2a-8da7-828475ee4639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmtl\Numerics">
+      <UniqueIdentifier>{906ca532-8a50-42a9-a714-bd0bb2181d85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmtl\External">
+      <UniqueIdentifier>{7946b9c5-9bab-43ec-8b27-ffed64c016bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\maya">
+      <UniqueIdentifier>{b9e7f42d-baa6-4645-9d1a-1344cee9a87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\maya">
+      <UniqueIdentifier>{c0a51449-a44e-40e9-ad59-37162b8ef12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lights">
+      <UniqueIdentifier>{8197a1c0-5f0a-4073-bec1-e76047018732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\brdfs">
+      <UniqueIdentifier>{f80ec893-926a-4422-8ee4-19860586918f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maya\ma_writer.cpp">
+      <Filter>Source Files\maya</Filter>
+    </ClCompile>
+    <ClCompile Include="ass_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\area_light.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+    <ClCompile Include="lights\point_light.cpp">
+      <Filter>Source Files\lights</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gmtl\gmtl\AABox.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\AABoxOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\AxisAngle.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\AxisAngleOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Comparitors.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Config.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Containment.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Coord.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\CoordOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Defines.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\EulerAngle.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\EulerAngleOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Frustum.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\FrustumOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Generate.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\gmtl.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Helpers.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Intersection.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\LineSeg.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\LineSegOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Math.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Matrix.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\MatrixOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\OOBox.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Output.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\ParametricCurve.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Plane.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\PlaneOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Point.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Quat.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\QuatOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Ray.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\RayOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Sphere.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\SphereOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Tri.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\TriOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Vec.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\VecBase.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\VecExprMeta.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\VecOps.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\VecOpsMeta.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Version.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Xforms.h">
+      <Filter>gmtl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Util\Assert.h">
+      <Filter>gmtl\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Util\Meta.h">
+      <Filter>gmtl\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Util\StaticAssert.h">
+      <Filter>gmtl\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Fit\GaussPointsFit.h">
+      <Filter>gmtl\Fit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Misc\MatrixConvert.h">
+      <Filter>gmtl\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\Numerics\Eigen.h">
+      <Filter>gmtl\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gmtl\gmtl\External\OpenSGConvert.h">
+      <Filter>gmtl\External</Filter>
+    </ClInclude>
+    <ClInclude Include="maya\ma_writer.h">
+      <Filter>Header Files\maya</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="brdfs\blinn.h">
+      <Filter>Source Files\brdfs</Filter>
+    </ClInclude>
+    <ClInclude Include="brdfs\lambert.h">
+      <Filter>Source Files\brdfs</Filter>
+    </ClInclude>
+    <ClInclude Include="brdfs\standard.h">
+      <Filter>Source Files\brdfs</Filter>
+    </ClInclude>
+    <ClInclude Include="brdfs\blinnphong.h">
+      <Filter>Source Files\brdfs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="maya\maya_helper.py">
+      <Filter>Source Files\maya</Filter>
+    </None>
+  </ItemGroup>
+</Project>

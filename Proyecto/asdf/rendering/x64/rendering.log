@@ -1,0 +1,27 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: El directorio Intermediate no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Intermediate.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+  reporter.cpp
+  ma_writer.cpp
+  main.cpp
+d:\documentos\master computación gráfica\rendering\redering\proyecto\main.cpp(257): warning C4018: '<': no coinciden signed/unsigned
+d:\documentos\master computación gráfica\rendering\redering\proyecto\main.cpp(259): warning C4018: '<': no coinciden signed/unsigned
+  point_light.cpp
+  area_light.cpp
+  camera.cpp
+  ass_parser.cpp
+  Generando código...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\rendering.dll) no coincide con el valor de la propiedad OutputFile de Linker (D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\bin\x64\Debug\rendering.dll). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
+     Creando biblioteca ./deploy/x64/Debug/rendering.lib y objeto ./deploy/x64/Debug/rendering.exp
+libglog_static.lib(logging.obj) : warning LNK4099: no se encontró PDB 'libglog_static.pdb' con 'libglog_static.lib(logging.obj)' o en 'D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\libglog_static.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+libglog_static.lib(raw_logging.obj) : warning LNK4099: no se encontró PDB 'libglog_static.pdb' con 'libglog_static.lib(raw_logging.obj)' o en 'D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\libglog_static.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+libglog_static.lib(utilities.obj) : warning LNK4099: no se encontró PDB 'libglog_static.pdb' con 'libglog_static.lib(utilities.obj)' o en 'D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\libglog_static.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+libglog_static.lib(vlog_is_on.obj) : warning LNK4099: no se encontró PDB 'libglog_static.pdb' con 'libglog_static.lib(vlog_is_on.obj)' o en 'D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\libglog_static.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+libglog_static.lib(port.obj) : warning LNK4099: no se encontró PDB 'libglog_static.pdb' con 'libglog_static.lib(port.obj)' o en 'D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\libglog_static.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+  rendering.vcxproj -> D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\asdf\rendering\x64\rendering.dll
+  Ya existe el subdirectorio o el archivo D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\deploy.
+  Ya existe el subdirectorio o el archivo D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\deploy\x64.
+  Ya existe el subdirectorio o el archivo D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\deploy\x64\Debug.
+  D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\bin\x64\Debug\rendering.dll
+  1 archivo(s) copiado(s)
+  D:\Documentos\Master Computación Gráfica\Rendering\Redering\Proyecto\bin\x64\Debug\rendering.dll
+  1 archivo(s) copiado(s)
